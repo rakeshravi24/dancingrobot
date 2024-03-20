@@ -1,0 +1,156 @@
+body{
+    background:orange;
+    }
+    h1{
+        color:black;
+    }
+    .main{
+        border: 3px solid black;
+        height: 500px;
+        margin-top: 100px;
+        background:black;
+    }
+    
+    .face{
+        background: chartreuse;
+        height: 150px;
+        width: 150px;
+        border-radius: 35% 35% 35% 35%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .eyes{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    
+    .leye,.reye{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: black;
+    }
+    
+    .body1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 250px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .larm{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    
+    .center{
+        height: 150px;
+        width: 150px;
+        background: chartreuse;
+        border-radius: 35% 35% 35% 35%;
+    }
+    
+    .rarm{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    
+    .legs{
+        display: flex;
+        justify-content: space-evenly;
+        width: 150px;
+        margin: auto;
+        margin-top: -20px;  
+    }
+    
+    .lleg{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+    }
+    
+    .rleg{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+    }
+    .main:hover .larm{
+        animation:dancel 1s 1s infinite;
+    }
+    @keyframes dancel{
+    0%{transform:rotate(-180deg);transform-origin:bottom};
+    25%{transform:rotate(0deg);transform-origin:bottom};
+    50%{transform:rotate(-180deg);transform-origin:bottom};
+    75%{transform:rotate(0deg);transform-origin:bottom};
+    100%{transform:rotate(90deg);transform-origin:bottom};
+    }
+    .main:hover .rarm{
+        animation:dancer 1s 1s infinite;
+    }
+    @keyframes dancer{
+        0%{transform:rotate(180deg);transform-origin:bottom};
+    25%{transform:rotate(0deg);transform-origin:bottom};
+    50%{transform:rotate(180deg);transform-origin:bottom};
+    75%{transform:rotate(0deg);transform-origin:bottom};
+    100%{transform:rotate(90deg);transform-origin:bottom};
+    }
+    .main:hover .center{
+        animation:dancec 0.3s 1s infinite;
+    }
+    @keyframes dancec{
+    0%{transform:rotate(-45deg)};
+    25%{transform:rotate(0deg)};
+    50%{transform:rotate(-45deg)};
+    75%{transform:rotate(0deg)};
+    100%{transform:rotate(45deg)};
+    }
+    .main:hover .lleg{
+        animation:dancell 1s 1s infinite;
+    }
+    @keyframes dancell{
+        0%{transform:rotate(90deg);transform-origin:right};
+        25%{transform:rotate(0deg);transform-origin:top};
+        50%{transform:rotate(90deg);transform-origin:left};
+        75%{transform:rotate(0deg);transform-origin:top};
+        100%{transform:rotate(90deg);transform-origin:bottom};
+        }
+        .main:hover .rleg{
+            animation:dancerl 1s 1s infinite;
+        }
+        @keyframes dancerl{
+            0%{transform:rotate(-90deg);transform-origin:bottom};
+            25%{transform:rotate(0deg);transform-origin:bottom};
+            50%{transform:rotate(-90deg);transform-origin:top};
+            75%{transform:rotate(45deg);transform-origin:left};
+            100%{transform:rotate(-90deg);transform-origin:right};
+            }
+            .main:hover .face{
+                animation:moveface 0.5s 1s infinite;
+            }
+            @keyframes moveface{
+                0%{transform:scalex(1.1)};
+                25%{transform:scalex(1.1)};
+                50%{transform:scalex(1.1)};
+                100%{transform:scalex(1.1)};
+                }
+                .main:hover {
+                    animation:changebg 1s 1s infinite;
+                }
+                @keyframes changebg{
+                    0%{background:linear-gradient(rgb(220, 173, 85), rgb(113, 113, 64), rgb(134, 14, 34));}
+                    25%{background:linear-gradient(rgb(85, 85, 149), rgb(48, 38, 38), rgb(43, 5, 5) );}
+                    50%{background:linear-gradient(red, black, yellow);}
+                    75%{background:linear-gradient(rgb(130, 60, 60), rgb(101, 170, 101), rgb(152, 152, 48));}
+                    100%{background:linear-gradient(rgb(4, 4, 81), rgb(42, 96, 96), violet);}
+                }
